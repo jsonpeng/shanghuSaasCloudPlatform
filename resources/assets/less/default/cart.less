@@ -1,0 +1,148 @@
+// 购物车中产品分类列表样式
+.weui-cell.rollTip{background-color: @maincolor;color: #fff;font-size: @_24;
+		img{display: inline-block;height: @_28;margin-right: @_10;}
+}
+.zcjy-product-cart{
+	padding-left: @_280;
+	background-color: #fff;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	height: @_200;
+	padding-top: @_15;
+	padding-bottom: @_15;
+	.checkingbutton{position: absolute; left: -1.8rem; top: 1rem; width: 1.5rem; height: 1.5rem;}
+	.checkingbutton2{position: absolute; left: @_23; top:@_82; width: @_35; height: @_35; font-size: @_35;}
+	//.btn-yes{background-image: url('./images/cart/yes.png'); background-size: cover;}
+	//.btn-no{background-image: url('./images/cart/no.png'); background-size: cover;}
+	.productImage{position: absolute; left: @_95; top: @_15; width: @_170; height: @_170;overflow: hidden;
+		img{width: 100%;}
+	}
+	// .folderDimensions{
+	// 	margin-left: -7rem;
+	// 	padding-left: 2rem;
+	// }
+	.price{margin-top:@_10; font-size: @_26; color: @priceColor;}
+	.cart-item{margin-top: -@_50;}
+	.remark{font-size: @_26; color: #999;}
+	.product-name{font-size: @_26; line-height: @_40; max-height: @_80; overflow: hidden;}
+	.counter{margin-top: @_14;font-size: @_26;
+		input{font-size: @_26;}
+	}
+}
+
+.fa{
+	float: left;height: @_40;width: @_40;
+	background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+.fa-plus{
+	background-image: url('./images/cart/plus.png'); 
+}
+.fa-minus{
+	background-image: url('./images/cart/minus.png');
+}
+.counter{
+  color: #8fc31f; display: inline-block; overflow: hidden; margin-right: 0.5rem;
+  input{
+  	width: @_60; 
+  	height: @_40; 
+  	line-height: @_40;
+  	float:left; 
+  	margin: 0 0.1rem; 
+  	border: none; 
+  	font-size: @_36; 
+  	text-align: center; 
+  	color: @inputColor; 
+  	background-color: transparent;
+  }
+}
+.proudct-info-wrapper{margin-right: 11.5px;}
+.checkwrapper{
+	position: fixed;
+	bottom: 3.7rem;
+	font-size: @_28;
+	height: @_98;
+	line-height: @_100; 
+	background-color: #fff; 
+	border-top: 1px solid @borderColor; 
+	border-top: 1px solid #ddd;
+	left: 0; 
+	right: 0;
+	z-index: 999;
+	/*
+	.checkbutton{
+		position: absolute;top: 0;right: 0;width: @_180; background-color: @maincolor; text-align: center; color: #fff;height: @_80;
+		a{color: #fff;}
+	}
+	*/
+	.right-botton01{	line-height: @_100; 
+		position: absolute;top: 0;right: 0;width: @_180; background-color: @maincolor; text-align: center; color: #fff;height: @_100;
+		a{color: #fff;}
+	}
+	.right-botton02{	line-height: @_100; 
+		position: absolute;top: 0;right: @_180;width: @_180; background-color: @secondColor; text-align: center; color: #fff;height: @_100;
+		a{color: #fff;}
+	}
+	.buynow{	line-height: @_100; 
+		position: absolute;top: 0;right: @_180;width: @_180; text-align: center; border-left: 1px solid @borderColor;height: @_100;
+		a{color: #fff;}
+	}
+}
+
+.checkwrapper.product-checker{
+	bottom: 0;
+	line-height: @_98;
+	p{display: inline-block;position: absolute;padding: 0 @_10;}
+}
+
+.pay{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+}
+.pay-selector{
+    width: 80%;
+    background-color: #fff;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    overflow: hidden;
+    .header{
+	    text-align: center;
+	    padding: 15px 0;
+	    background-color: @borderColor;
+	    .close{
+	    	position: absolute; 
+	    	right: 15px; 
+	    	top: 15px; 
+	    	width: 25px; 
+	    	height: 25px; 
+	    	background-size: cover;
+	    }
+    }
+    .body{
+    	margin: 0 20px;
+    }
+    .pay-item{
+    	background-position: 15px center;
+    	background-repeat: no-repeat;
+    	background-size: 35px 35px;
+    	height: 65px;
+    	line-height: 45px;
+    	padding: 10px;
+    	padding-left: 70px;
+    	border-bottom: 1px solid @borderColor;
+    }
+}
+
+.no-shoppingcart{
+	text-align: center; margin-top: 33%;
+	img{width: @_254; height: @_275;}
+	.title{font-size: @_32;}
+	.des{font-size: @_28; color: #999; margin-top: @_20;}
+}

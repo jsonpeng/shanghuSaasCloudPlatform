@@ -1,0 +1,243 @@
+// 主题
+@theme: "default";
+
+// 主题颜色
+@maincolor: #ff4e44;
+
+// 顶部导航
+@navTopHeight:88px;
+@navTopFontSize:34px;
+@navTopFontColor:#333;
+
+// 底部导航
+@navBottomHeight:98px;
+@navBottomFontSize:20px;
+@navBottomFontColor:#333;
+
+// 搜索框
+@searchBoxBackgroundColor:#ececec;
+@searchBoxFontSize:18px;
+@searchBoxColor:#a8a8a8;
+@searchBoxHeight:70px;
+@searchBoxBorderRadius:10px;
+@switchButtonWidth:57px;
+@switchButtonHeight:35px;
+@switchButtonBorderRadius:35px;
+
+// 拼单成员列表
+@pieceGroupBtnHeight:70px;
+@pieceGroupBtnBorderRadius:10px;
+
+// 拼单分享
+@pieceShareBtnHeight:70px;
+@pieceShareBtnBorderRadius:10px;
+
+// 商品属性选择
+@goodsThumbWidth:155px;
+@goodsThumbHeight:155px;
+@goodsThumbBorderRadius:155px;
+@goodsSizeHeight:40px;
+@goodsSizeWidth:138px;
+@goodsSizeBorderRadius:5px;
+@goodsNumWidth:75px;
+@goodsNumHeight:40px;
+@goodsNumBorderRadius:5px;
+@goodsNumAddWidth:40px;
+@goodsNumAddHeight:40px;
+@goodsNumAddBorderRadius:5px;
+@goodsSureBtnHeight:70px;
+@priceColor:#ff4e44;
+
+// 选项卡
+@tabFontSize:28px;
+@tabFontColor:#a8a8a8;
+@tabFontSelect:#ff4e44;
+@tabMarginBototm:28px;
+
+// 九宫格
+@gridsMinFontSize:18px;
+@gridsMaxFontSize:34px;
+@girdsIconMarginBottom:28px;
+@girdsTextMarginBottom:40px;
+
+// 领取优惠券
+@receiveCouponPadding:40px 0;
+@sectionMargin: 5px;
+
+// 商品分类
+@goodsClassifyTitleFontSize:28px;//一级标题字体大小
+@goodsClassifyTitleMarginBottom:20px;//一级标题下外边距
+@goodsClassifyTitleFontColor:#333;//一级标题字体颜色
+@goodsClassifyTextFontSize:20px;//文本字体大小
+@goodsClassifyTextFontColor:#a8a8a8;//文本字体颜色
+
+// 限时秒杀
+
+/**
+ * 文章详情
+ */
+
+/**
+ * 顶部导航栏
+ */
+
+/**
+ * 导航栏样式
+ */
+
+
+@sectionMargin: 5px;
+@secondColor:#84d4da;
+
+@lighterTextColor: #999;// 副标题，次要文字显示颜色
+@borderColor: #eee; // 边框颜色
+@inputColor: #666; // 输入框文字颜色
+@textColor: #333; // 主题文字显示颜色
+
+@order-image-height: @_140;
+
+
+
+body{
+	font-family: '-apple-system', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+.section-margin{margin-top: @sectionMargin;}
+.page__bd_spacing{padding: 15px;}
+.weui-dialog__btn_primary{color: @maincolor;}
+img{display: inline-block;}
+
+@import "para_px";
+@import "index";
+@import "category";
+@import "slider";
+@import "product";
+@import "cart";
+@import "check";
+@import "order";
+@import "alert";
+@import "promp";
+@import "flashsale";
+@import "coupon";
+@import "usercenter";
+@import "address";
+@import "team";
+@import "post";
+@import "found";
+/* //@import "main"; */
+
+// 页面底部边距，以防被底部TAB遮挡
+#app{
+	padding-bottom: @_160;
+	.weui-tabbar{
+		position: fixed;
+	}
+	.weui-grid{padding: @_20 0;}
+}
+html{
+	min-height: 100%;
+}
+body {
+	width: 100%;
+	overflow-x: hidden;
+	background-color: #eee;
+	min-height: 100%;
+	height: 100%;
+}
+div{box-sizing:border-box;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+.no-mt .vux-no-group-title{margin-top: 0;}
+.weui-grids{background-color: #fff;}
+.content-body{
+	padding: 1rem; 
+	padding-bottom: 40px; 
+	padding-top: 0;
+    color: #666;
+    line-height: @_68;
+	img{max-width: 100%;}
+	p{margin: 0; padding: 0; margin-bottom: 10px;}
+}
+a{color: #333;}
+
+.alert {
+    margin-bottom: @_8;
+    font-size: 0.6rem;
+}
+
+.oneline{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.weui-grids .weui-grid:before{border-right: none;}
+.weui-grids .weui-grid:after{border-bottom: none;}
+.weui-dialog{max-width: 80%;}
+.weui-dialog__title{font-size: @_32;}
+.weui-dialog__bd{font-size: @_28;}
+.weui-dialog__ft{line-height: @_80; font-size: @_28;}
+.weui-footer, .weui-grid__label{
+	font-size: @_28; color: #666;
+}
+.weui-cells{margin-top: 0;}
+.weui-cells:after{
+	border-bottom: none;
+}
+.weui-cell{
+	font-size: @_30;
+	.weui-label{width: @_190;}
+}
+.weui-cell:before{border-top:0;}
+.weui-panel__hd, .weui-cell, .weui-media-box, .weui-form-preview__hd, .weui-form-preview__bd, .page__bd_spacing, .weui-cells__title
+{
+	padding: @_15 @_30;
+}
+.weui-cell__ft{
+	font-size: @_30;
+
+}
+.weui-cell_access .weui-cell__ft:after{
+	width: @_12;
+	height: @_12;
+}
+.weui-media-box:before{border-top:0;}
+.weui-media-box__title{
+	font-size: @_28; margin-bottom: @_8;
+}
+.weui-badge {
+	position: absolute;
+	top: -@_10;
+	right: -@_20;
+    height: @_34; width: @_34;
+    border-radius: @_17;
+    line-height: @_34;
+    padding: 0;
+    font-size: @_20;
+    background-color:#ff4e44;
+
+}
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon>i, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{
+	color: @maincolor;
+}
+.weui-panel__hd{font-size: @_20;}
+
+.weui-media-box__desc{font-size: @_26; color: #999;}
+.weui-media-box_appmsg .weui-media-box__hd{width: @_100; height: @_100;}
+.page{background-color: #fff;}
+.weui-btn{font-size: @_30; }
+.weui-btn+.weui-btn{margin-top: @_30;}
+.weui-form-preview{font-size: @_28;}
+.weui-cell_link{color: #666;}
+.weui-cells__title{font-size: @_30;}
+.weui-actionsheet__title{font-size: @_24;}
+.weui-actionsheet__cell{font-size: @_32;}
+.weui-actionsheet__cell img{height: @_32; margin-right: @_10;}
+.weui-switch-cp__input:checked~.weui-switch-cp__box, .weui-switch:checked{
+	border-color: @maincolor;
+    background-color: @maincolor;
+}
+.weui-btn_primary{background-color: @maincolor;}
+
+.weui-navbar__item{font-size: @_30;}
+.weui-navbar__item.weui-bar__item_on{background:#fff;}
+.weui-navbar+.weui-tab__panel{padding-top: @_100;}
+.weui-form-preview__label{font-size:@_28;}
+.weui-icon-success-circle, .weui-icon-success-no-circle{color:@maincolor;}
+.weui-grid{padding: 10px 10px;}
+.nav_tip a .icon{color: #333;font-size: 24px;}
+
